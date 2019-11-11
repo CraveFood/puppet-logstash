@@ -208,7 +208,6 @@ describe 'class logstash' do
           '-XX:+HeapDumpOnOutOfMemoryError',
           '-XX:+UseCMSInitiatingOccupancyOnly',
           '-XX:+UseConcMarkSweepGC',
-          '-XX:+UseParNewGC',
         ]
         expert_flags.each do |flag|
           expect(logstash_process_list.pop).to include(flag)
